@@ -1,0 +1,7 @@
+Nome              Tipo             Attributi
+ID                INT              Primary Key
+make              VARCHAR(20)      NOT NULL
+model             VARCHAR(20)      NOT NULL
+doors             TINYINT          NOT NULL
+transmissions     VARCHAR(20)      NOT NULL
+type_of_fuel      VARCHAR(20)      NOT NULL
