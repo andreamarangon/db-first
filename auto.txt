@@ -1,7 +1,19 @@
-Nome              Tipo             Attributi
-ID                INT              Primary Key
-make              VARCHAR(20)      NOT NULL
-model             VARCHAR(20)      NOT NULL
-doors             TINYINT          NOT NULL
-transmissions     VARCHAR(20)      NOT NULL
-type_of_fuel      VARCHAR(20)      NOT NULL
+Nome                Tipo             Attributi
+ID                  INT              PRIMARY_KEY
+make                VARCHAR(20)      NOT NULL
+model               VARCHAR(20)      NOT NULL
+year                YEAR             NOT NULL
+doors               TINYINT          NOT NULL
+seats               TINYINT          NOT NULL
+transmissions       VARCHAR(20)      NOT NULL
+type_of_fuel        VARCHAR(20)      NOT NULL
+type_gear           VARCHAR(20)      NULL DEFAULT('4 cilindri')
+cc                  SMALLINT         NOT NULL
+horsepower          SMALLINT         NOT NULL
+vin                 VARCHAR(100)     NULL
+km                  FLOAT(9,2)       NULL
+registration_year   YEAR             NULL
+prop_num            TINYINT          NULL
+price               DECIMAL          NOT NULL
+color               VARCHAR(20)      NULL
+is_ancient          TINYINT          NULL DEFAULT(0)
